@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="533dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/zhou"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="100dp"
+            android:src="@drawable/jie"/>
+
+        <RelativeLayout
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/zhou"
+            android:background="#f8f8f8"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="150dp"
+                android:layout_height="26dp"
+                android:text="夜的第七章"
+                android:textSize="23dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="6dp" />
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="25dp"
+                android:text="周杰伦"
+                android:textSize="16dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="6dp"
+                android:layout_below="@+id/t1"/>
+            <ImageButton
+                android:id="@+id/play"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginLeft="120dp"
+                android:layout_toRightOf="@+id/t1"
+                android:layout_marginTop="8dp"
+                android:background="#f8f8f8"
+                android:src="@drawable/play"
+                android:scaleType="fitEnd"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:background="#807b7b"/>
+</LinearLayout>

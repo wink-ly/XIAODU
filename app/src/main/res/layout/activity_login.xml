@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".LoginActivity">
+
+    <Button
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:text="小独"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:background="@color/white"/>
+
+    <ViewFlipper
+        android:id="@+id/fli"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_below="@+id/welcome"
+        android:inAnimation="@anim/slide_in_right"
+        android:outAnimation="@anim/slide_out_left">
+    </ViewFlipper>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/fli"
+        android:hint="用户名"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/username"
+        android:hint="密码"
+        android:layout_marginTop="15dp"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/login1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="25dp"
+        android:text="登录"
+        android:background="@drawable/login_color"/>
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@id/login1"
+        android:text="注册"
+        android:background="@drawable/login_color"/>
+
+</RelativeLayout>

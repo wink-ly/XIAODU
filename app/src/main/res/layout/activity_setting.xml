@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".SettingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageButton
+            android:id="@+id/imgback"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/white"
+            android:scaleType="fitXY"
+            android:src="@drawable/back" />
+        <TextView
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:hint="设置"
+            android:textColor="#000"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="200dp"
+        android:layout_gravity="center"
+        android:background="@xml/selector1">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="40dp"
+            android:layout_gravity="center"
+            android:hint="当前版本"
+            android:textSize="20sp"
+            android:focusable="false"/>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="160dp"
+            android:src="@drawable/go"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:background="@xml/selector1">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="40dp"
+            android:layout_gravity="center"
+            android:hint="隐私设置"
+            android:textSize="20sp"
+            android:focusable="false"/>
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="160dp"
+            android:src="@drawable/go" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear3"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:background="@xml/selector1">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="40dp"
+            android:layout_gravity="center"
+            android:hint="联系我们"
+            android:textSize="20sp"
+            android:focusable="false"/>
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="160dp"
+            android:src="@drawable/go"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="65dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:text="小独"
+        android:textSize="30dp" />
+    <TextView
+        android:layout_width="110dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="安卓课程出品"
+        android:textSize="18dp"/>
+
+
+
+
+</LinearLayout>

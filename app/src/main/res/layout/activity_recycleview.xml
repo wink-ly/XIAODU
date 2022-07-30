@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/relinear"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <TextClock
+            android:id="@+id/reback"
+            android:layout_width="40dp"
+            android:layout_height="45dp"
+            android:format12Hour="dd"
+            android:format24Hour="dd"
+            android:textSize="30sp"/>
+        <TextClock
+            android:layout_width="60dp"
+            android:layout_height="45dp"
+            android:format12Hour="MMMM.yyyy"
+            android:format24Hour="MMMM.yyyy"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relinear"/>
+
+</RelativeLayout>

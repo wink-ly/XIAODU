@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextClock
+            android:id="@+id/time1"
+            android:layout_width="40dp"
+            android:layout_height="45dp"
+            android:format12Hour="dd"
+            android:format24Hour="dd"
+            android:textSize="30sp"/>
+
+
+        <TextClock
+            android:layout_width="60dp"
+            android:layout_height="45dp"
+            android:format12Hour="MMMM.yyyy"
+            android:format24Hour="MMMM.yyyy"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="55dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:gravity="center"
+            android:text="乐"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="55dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/tv1"
+            android:gravity="center"
+            android:text="句"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="55dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/tv2"
+            android:gravity="center"
+            android:text="学"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <ImageButton
+            android:id="@+id/img"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="7dp"
+            android:background="@color/white"
+            android:scaleType="fitXY"
+            android:src="@drawable/caidan" />
+    </RadioGroup>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+    </androidx.viewpager.widget.ViewPager>
+
+</LinearLayout>
